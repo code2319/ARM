@@ -1,0 +1,7 @@
+/notes.md
+# don't look here
+/ARMv6_32/*
+# except
+!/ARMv6_32/.s
+/arm64-apple-darwin22.1.0/*
+!/arm64-apple-darwin22.1.0/*.s
