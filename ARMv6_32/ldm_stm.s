@@ -1,3 +1,12 @@
+/* keep in mind that a .word refers to a data (memory) block of 32 bits = 4 BYTES. 
+This is important for understanding the offsetting. So the program consists of .data section 
+where we allocate an empty array (array_buff) having 5 elements. 
+
+We will use this as a writable memory location to STORE data. 
+The .text section contains our code with the memory operation instructions and 
+a read-only data pool containing two labels: one for an array having 7 elements, 
+another for “bridging” .text and .data sections so that we can access the array_buff residing in the .data section. */
+
 .data
 @allocate an empty array (array_buff) having 5 elements:
 array_buff:
